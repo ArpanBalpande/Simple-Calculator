@@ -1,1 +1,1 @@
-WindowsApp1\bin\Release\WindowsApp1.exe #Run the Simple Calculator Application
+Copy-Item 'C:\DeployTemp\drop\WindowsApp1\bin\Release\WindowsApp1.exe' 'C:\'
