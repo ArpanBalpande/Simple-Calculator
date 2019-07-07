@@ -1,1 +1,1 @@
-.\WindowsApp1.exe #Run the Simple Calculator Application
+WindowsApp1\bin\Release\WindowsApp1.exe #Run the Simple Calculator Application
