@@ -37,8 +37,8 @@
             "type": "file"
         },
         {
-            "destination": "C:\\Users\\arpan\\Downloads",
-            "source": "{{user `package_path`}}\\WindowsApp1\\bin\\Release\\WindowsApp1.exe",
+            "destination": "C:\\",
+            "source": "{{user `package_path`}}",
             "type": "file"
         },
         {
