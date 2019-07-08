@@ -23,38 +23,38 @@
         }
     ],
     "post-processors": [],
-    "provisioners": [ // 'type' key inside every element specifies the type of provisioner
+    "provisioners": [ 
         {
-            "inline": [ //  This is an array of commands to execute. The commands are concatenated by newlines and turned into a single file, so they are all executed within the same context
-                "cmd /c \"if exist c:\\\\DeployTemp rd /s /q c:\\\\DeployTemp\"", // Check whether the c:\DeployTemp directoy already exists or not. If it exists then remove the directory. The 'rd' command is for remove directory, /s is for deleting the directory tree, /q is for running the command in quiet mode without prompting user for confirmation
-                "cmd /c \"mkdir c:\\\\DeployTemp\"" // If it does not exists then create the directory
+            "inline": [ 
+                "cmd /c \"if exist c:\\\\DeployTemp rd /s /q c:\\\\DeployTemp\"",
+                "cmd /c \"mkdir c:\\\\DeployTemp\""
             ],
-            "type": "windows-shell" // Run the above command using 'cmd' i.e command prompt
+            "type": "windows-shell"
         },
         {
-            "destination": "c:\\DeployTemp", // The path where the file will be uploaded to in the machine
-            "source": "{{user `package_path`}}", // The path to a local file or directory to upload to the machine
-            "type": "file" // The file Packer provisioner uploads files to machines built by Packer
+            "destination": "c:\\DeployTemp",
+            "source": "{{user `package_path`}}",
+            "type": "file"
         },
         {
-            "destination": "c:\\", // The path where the file will be uploaded to in the machine
-            "source": "{{user `package_path`}}\\WindowsApp1\\bin\\Release\\WindowsApp1.exe", // The path to a local file or directory to upload to the machine
-            "type": "file" // The file Packer provisioner uploads files to machines built by Packer
-        },
-        {
-            "inline": [ //  This is an array of commands to execute. The commands are concatenated by newlines and turned into a single file, so they are all executed within the same context
-                "cd \"C:\\DeployTemp\"", // Change the context to C:\DeployTemp
-                "ls", // List all the contents
-                "C:\\DeployTemp\\{{user `package_name`}}\\{{user `script_relative_path`}} {{user `script_arguments`}}" // Runs our deployment script using the optional deployment script arguments
-            ],
-            "type": "powershell" // The PowerShell Packer provisioner runs PowerShell scripts on Windows machines.
+            "destination": "C:\\Users\\arpan\\Downloads",
+            "source": "{{user `package_path`}}\\WindowsApp1\\bin\\Release\\WindowsApp1.exe",
+            "type": "file"
         },
         {
             "inline": [
-                "if( Test-Path $Env:SystemRoot\\windows\\system32\\Sysprep\\unattend.xml ){ rm $Env:SystemRoot\\windows\\system32\\Sysprep\\unattend.xml -Force}", // ??
-                "\u0026 $Env:SystemRoot\\System32\\Sysprep\\Sysprep.exe /oobe /generalize /quit /quiet" // ??
+                "cd \"C:\\DeployTemp\"",
+                "ls",
+                "C:\\DeployTemp\\{{user `package_name`}}\\{{user `script_relative_path`}} {{user `script_arguments`}}"
             ],
-            "type": "powershell" // The PowerShell Packer provisioner runs PowerShell scripts on Windows machines.
+            "type": "powershell"
+        },
+        {
+            "inline": [
+                "if( Test-Path $Env:SystemRoot\\windows\\system32\\Sysprep\\unattend.xml ){ rm $Env:SystemRoot\\windows\\system32\\Sysprep\\unattend.xml -Force}",
+                "\u0026 $Env:SystemRoot\\System32\\Sysprep\\Sysprep.exe /oobe /generalize /quit /quiet"
+            ],
+            "type": "powershell"
         }
     ],
     "variables": {
