@@ -37,11 +37,6 @@
             "type": "file"
         },
         {
-            "destination": "C:\\",
-            "source": "{{user `package_path`}}",
-            "type": "file"
-        },
-        {
             "inline": [
                 "cd \"C:\\DeployTemp\"",
                 "ls",
