@@ -24,7 +24,7 @@
         }
     },
     "variables": {
-        "storageAccountName": "SimCalSA"
+        "storageAccountName": "simcalsa"
     },
     "resources": [
         {
