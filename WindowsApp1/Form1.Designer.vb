@@ -48,7 +48,7 @@ Partial Class HesapMakinesi
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Button1.ForeColor = System.Drawing.Color.DarkBlue
         Me.Button1.Name = "Button1"
         Me.Button1.UseVisualStyleBackColor = False
         '
