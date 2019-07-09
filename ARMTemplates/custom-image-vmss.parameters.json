@@ -31,15 +31,6 @@
       },
       "existingManagedImageName": {
         "value": "DeereCal"
-      },
-      "existingAppGatewayResourceGroup": {
-        "value": "ECIF"
-      },
-      "existingAppGatewayName": {
-        "value": "SimCalAppGTW"
-      },
-      "existingAppGatewayBackendPoolName": {
-        "value": "appGatewayBackendPool"
       }
     }
   }
