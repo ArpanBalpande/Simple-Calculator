@@ -95,7 +95,7 @@
             "type": "Microsoft.Compute/virtualMachineScaleSets",
             "name": "[variables('vmssName')]",
             "location": "[parameters('location')]",
-            "apiVersion": "2016-04-30-preview",
+            "apiVersion": "2019-03-01",
             "sku": {
                 "name": "[parameters('vmSku')]",
                 "tier": "Standard",
