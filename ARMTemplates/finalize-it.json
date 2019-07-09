@@ -130,6 +130,12 @@
                                             "properties": {
                                                 "subnet": {
                                                     "id": "[variables('subnetId')]"
+                                                },
+                                                "publicIpAddressConfiguration": {
+                                                    "name": "pub1",
+                                                    "properties": {
+                                                        "idleTimeoutInMinutes": 15
+                                                    }
                                                 }
                                             }
                                         }
