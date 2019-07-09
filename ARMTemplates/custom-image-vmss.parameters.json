@@ -6,7 +6,7 @@
         "value": "Standard_F2"
       },
       "vmssName": {
-        "value": "SimCalSS"
+        "value": "SimCalVMSS"
       },
       "instanceCount": {
         "value": 2
