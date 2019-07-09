@@ -38,7 +38,7 @@
         },
         "upgradePolicy": {
             "type": "string",
-            "defaultValue": "Manual",
+            "defaultValue": "Automatic",
             "allowedValues": [
                 "Manual",
                 "Automatic"
