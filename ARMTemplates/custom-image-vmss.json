@@ -1,0 +1,55 @@
+{
+    "sku": {
+      "tier": "Standard",
+      "capacity": 3,
+      "name": "Standard_D1_v2"
+    },
+    "location": "westus",
+    "properties": {
+      "overprovision": true,
+      "virtualMachineProfile": {
+        "storageProfile": {
+          "imageReference": {
+            "id": "/subscriptions/3e92397a-621d-49a2-9e9e-377efe86e2b3/resourceGroups/myResourceGroup/providers/Microsoft.Compute/images/DeereCal"
+          },
+          "osDisk": {
+            "caching": "ReadWrite",
+            "managedDisk": {
+              "storageAccountType": "Standard_LRS"
+            },
+            "createOption": "FromImage"
+          }
+        },
+        "osProfile": {
+          "computerNamePrefix": "SimCalSS",
+          "adminUsername": "arpanbalpande",
+          "adminPassword": "NeverQuit@22"
+        },
+        "networkProfile": {
+          "networkInterfaceConfigurations": [
+            {
+              "name": "SimCalSS",
+              "properties": {
+                "primary": true,
+                "enableIPForwarding": true,
+                "ipConfigurations": [
+                  {
+                    "name": "SimCalSS",
+                    "properties": {
+                      "subnet": {
+                        "id": "/subscriptions/3e92397a-621d-49a2-9e9e-377efe86e2b3/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/ECIF-vnet/subnets/default"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "upgradePolicy": {
+        "mode": "Manual"
+      }
+    }
+  }
+  
