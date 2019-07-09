@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "vmSku": {
+        "value": "Standard_F2"
+      },
+      "vmssName": {
+        "value": "SimCalSS"
+      },
+      "instanceCount": {
+        "value": 2
+      },
+      "adminUsername": {
+        "value": "arpanbalpande"
+      },
+      "adminPassword": {
+        "value": "NeverQuit@22"
+      },
+      "existingVirtualNetworkResourceGroup": {
+        "value": "ECIF"
+      },
+      "existingVirtualNetworkName": {
+        "value": "ECIF-vnet"
+      },
+      "existingVirtualNetworkSubnet": {
+        "value": "default"
+      },
+      "existingManagedImageResourceGroup": {
+        "value": "ECIF"
+      },
+      "existingManagedImageName": {
+        "value": "DeereCal"
+      },
+      "existingAppGatewayResourceGroup": {
+        "value": "ECIF"
+      },
+      "existingAppGatewayName": {
+        "value": "SimCalAppGTW"
+      },
+      "existingAppGatewayBackendPoolName": {
+        "value": "appGatewayBackendPool"
+      }
+    }
+  }
