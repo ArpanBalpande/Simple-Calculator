@@ -164,7 +164,7 @@
                         "name": "Profile1",
                         "capacity": {
                             "minimum": "2",
-                            "maximum": "20",
+                            "maximum": "4",
                             "default": "[parameters('instanceCount')]"
                         },
                         "rules": [
