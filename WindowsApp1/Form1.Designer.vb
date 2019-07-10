@@ -48,7 +48,7 @@ Partial Class HesapMakinesi
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.ForeColor = System.Drawing.Color.Red
+        Me.Button1.ForeColor = System.Drawing.Color.Magenta
         Me.Button1.Name = "Button1"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -56,7 +56,7 @@ Partial Class HesapMakinesi
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button2, "Button2")
-        Me.Button2.ForeColor = System.Drawing.Color.Red
+        Me.Button2.ForeColor = System.Drawing.Color.Magenta
         Me.Button2.Name = "Button2"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -64,7 +64,7 @@ Partial Class HesapMakinesi
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button3, "Button3")
-        Me.Button3.ForeColor = System.Drawing.Color.Red
+        Me.Button3.ForeColor = System.Drawing.Color.Magenta
         Me.Button3.Name = "Button3"
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -88,7 +88,7 @@ Partial Class HesapMakinesi
         '
         Me.Button6.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button6, "Button6")
-        Me.Button6.ForeColor = System.Drawing.Color.Red
+        Me.Button6.ForeColor = System.Drawing.Color.Magenta
         Me.Button6.Name = "Button6"
         Me.Button6.UseVisualStyleBackColor = False
         '
@@ -120,7 +120,7 @@ Partial Class HesapMakinesi
         '
         Me.Button10.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button10, "Button10")
-        Me.Button10.ForeColor = System.Drawing.Color.Red
+        Me.Button10.ForeColor = System.Drawing.Color.Magenta
         Me.Button10.Name = "Button10"
         Me.Button10.UseVisualStyleBackColor = False
         '
@@ -136,7 +136,7 @@ Partial Class HesapMakinesi
         '
         Me.Button12.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button12, "Button12")
-        Me.Button12.ForeColor = System.Drawing.Color.Red
+        Me.Button12.ForeColor = System.Drawing.Color.Magenta
         Me.Button12.Name = "Button12"
         Me.Button12.UseVisualStyleBackColor = False
         '
@@ -144,7 +144,7 @@ Partial Class HesapMakinesi
         '
         Me.Button13.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button13, "Button13")
-        Me.Button13.ForeColor = System.Drawing.Color.Red
+        Me.Button13.ForeColor = System.Drawing.Color.Magenta
         Me.Button13.Name = "Button13"
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -152,7 +152,7 @@ Partial Class HesapMakinesi
         '
         Me.Button14.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button14, "Button14")
-        Me.Button14.ForeColor = System.Drawing.Color.Red
+        Me.Button14.ForeColor = System.Drawing.Color.Magenta
         Me.Button14.Name = "Button14"
         Me.Button14.UseVisualStyleBackColor = False
         '
@@ -160,7 +160,7 @@ Partial Class HesapMakinesi
         '
         Me.Button15.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button15, "Button15")
-        Me.Button15.ForeColor = System.Drawing.Color.Red
+        Me.Button15.ForeColor = System.Drawing.Color.Magenta
         Me.Button15.Name = "Button15"
         Me.Button15.UseVisualStyleBackColor = False
         '
@@ -168,7 +168,7 @@ Partial Class HesapMakinesi
         '
         Me.Button16.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button16, "Button16")
-        Me.Button16.ForeColor = System.Drawing.Color.Red
+        Me.Button16.ForeColor = System.Drawing.Color.Magenta
         Me.Button16.Name = "Button16"
         Me.Button16.UseVisualStyleBackColor = False
         '
@@ -176,7 +176,7 @@ Partial Class HesapMakinesi
         '
         Me.Button17.BackColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.Button17, "Button17")
-        Me.Button17.ForeColor = System.Drawing.Color.Red
+        Me.Button17.ForeColor = System.Drawing.Color.Magenta
         Me.Button17.Name = "Button17"
         Me.Button17.UseVisualStyleBackColor = False
         '
@@ -219,7 +219,7 @@ Partial Class HesapMakinesi
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.ForeColor = System.Drawing.Color.Red
+        Me.ForeColor = System.Drawing.Color.Magenta
         Me.Name = "HesapMakinesi"
         Me.ResumeLayout(False)
         Me.PerformLayout()
